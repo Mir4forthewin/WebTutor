@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Using Uppercase Javascript</title>
+</head>
+<body>
+    <h1>Health Declaration Form</h1>
+
+    <h5 onmouseover="showMessage('FirstNameToolTip', 'Please Enter First Name above.')" 
+        onmouseout="removeMessage('FirstNameToolTip')">First Name</h5>
+    <h6 id="FirstNameToolTip"></h6>    
+    <input type="text" id="firstName"/>
+    <br />
+    <h5 onmouseover="showMessage('LastNameToolTip','Please Enter Last Name above.')" 
+        onmouseout="removeMessage('LastNameToolTip')">Last Name</h5>
+    <h6 id="LastNameToolTip"></h6>    
+    <input type="text" id="lastName"/>
+    <br />
+    <h5 onmouseover="showMessage('AddressToolTip','Please Enter Adress above.')" 
+        onmouseout="removeMessage('AddressToolTip')">Address</h5>
+    <h6 id="AddressToolTip"></h6>    
+    <input type="text" id="address"/>
+    <br />
+    <h5 onmouseover="showMessage('cellphoneToolTip','Please Enter Cellphone number above.')" 
+        onmouseout="removeMessage('cellphoneToolTip')">CellphoneNumber</h5>
+    <h6 id="cellphoneToolTip"></h6>    
+    <input type="text" id="contactNumber"/>
+    <br />
+    <br />
+    <h5>Date Of Birth</h5>
+    <input type="date" 
+            name="dob" 
+            value="">
+    <br />
+    <br />
+    <button onclick="submitData()">Submit</button>
+    <br />
+    <br />
+    <br />
+    <div id="submitOk"></div>
+    <br />
+    <br />
+    <div id="fullName"></div>
+    <br />
+    <br />
+    <div id="number"></div>
+    <br />
+    <br />
+    <div id="fullNameLength"></div>
+    <br />
+    <br />
+    First Name Length
+    <div id="firstNameLength"></div>
+    <br />
+    <br />
+    Last Name Length
+    <div id="lastNameLength"></div>
+    <br />
+    <br />
+    Address Length
+    <div id="addressLength"></div>
+    <br />
+    <br />
+    Cellphone Number Length
+    <div id="cellphoneLength"></div>
+    <br />
+    <br />
+    Cellphone Number Provider
+    <div id="cellphoneProvider"></div>
+
+ 
+    
+    <script src="day20.js"></script>
+</body>
+</html>
