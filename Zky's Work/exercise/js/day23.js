@@ -1,6 +1,6 @@
 var person = 
 {
-    firstName: "", 
+    firstName: "",  
     lastName: "", 
     address: "", 
     cellphoneNumber: "",
@@ -123,7 +123,6 @@ function clearData()
 
 //Start
 
-
 //retrieving data first
 
 function retrieveFirstNameData()
@@ -181,7 +180,6 @@ function pushDataAll(personData)
 
     registeredPerson.push(tempPerson);
 }
-
 
 function retrieveLastNameData()
 {
