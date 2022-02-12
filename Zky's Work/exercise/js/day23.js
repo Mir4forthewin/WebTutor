@@ -82,12 +82,18 @@ function showLog()
     // registeredPerson array of the person object (e.g registeredperson = [person, person])
     // person.lastname
 
-    for()
-    {
-        console.log();
+    const registeredPerson = ["person.firstName", "person.LastName", "person.Adress", "person.CellphoneNumber"];
 
+    let i, len, text;
+
+    for(i = 1, len = registeredPerson.length, text = ""; i < len; i++)
+    {
+        console.log(text += registeredPerson[i]);
+        
     }
 }
+
+
 
 function showMessage(idName, message)
 {
