@@ -87,7 +87,6 @@ function showLog()
         console.log();
 
     }
-
 }
 
 function showMessage(idName, message)
