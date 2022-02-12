@@ -78,6 +78,16 @@ function showLog()
     { 
         console.log(registeredPerson[index]);
     }
+
+    // registeredPerson array of the person object (e.g registeredperson = [person, person])
+    // person.lastname
+
+    for()
+    {
+        console.log();
+
+    }
+
 }
 
 function showMessage(idName, message)
