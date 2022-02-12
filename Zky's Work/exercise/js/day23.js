@@ -78,21 +78,14 @@ function showLog()
     { 
         console.log(registeredPerson[index]);
     }
+    
+    let i, len, text, surnameDummy;
 
-    // registeredPerson array of the person object (e.g registeredperson = [person, person])
-    // person.lastname
-
-    const registeredPerson = ["person.firstName", "person.LastName", "person.Adress", "person.CellphoneNumber"];
-
-    let i, len, text;
-
-    for(i = 1, len = registeredPerson.length, text = ""; i < len; i++)
+    for(i = 0, len = registeredPerson.length, text = ""; i < len; i++)
     {
-        console.log(text += registeredPerson[i]);
-        
+        console.log(registeredPerson[i].lastName);   
     }
 }
-
 
 
 function showMessage(idName, message)
