@@ -86,9 +86,6 @@ function showLog()
         console.log(registeredPerson[i].lastName);   
     }
 
-
-    //
-
     let txt = "";
 
     for(let x in person)
@@ -96,9 +93,7 @@ function showLog()
         txt += person[x] + " ";
     }
 
-    document.getElementById("person").innerHTML = txt;
     console.log(txt); 
-    //
 }
 
 
