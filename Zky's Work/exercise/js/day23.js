@@ -88,15 +88,15 @@ function showLog()
 
 
     //
+
     let txt = "";
 
-    for(let p in )
+    for(let x in person)
     {
-       
-
-        
+        txt += person[x] + " ";
     }
 
+    document.getElementById("person").innerHTML = txt;
     console.log(txt); 
     //
 }
