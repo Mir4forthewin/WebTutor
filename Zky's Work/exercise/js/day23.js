@@ -85,6 +85,20 @@ function showLog()
     {
         console.log(registeredPerson[i].lastName);   
     }
+
+
+    //
+    let txt = "";
+
+    for(let p in )
+    {
+       
+
+        
+    }
+
+    console.log(txt); 
+    //
 }
 
 
