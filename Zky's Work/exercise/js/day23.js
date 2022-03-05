@@ -119,6 +119,7 @@ function showLog()
         z++;
     }
 
+    console.log(txt); 
 }
 
 function showMessage(idName, message)
