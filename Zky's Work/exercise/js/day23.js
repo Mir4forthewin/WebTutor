@@ -94,7 +94,7 @@ function showLog()
     }
 
     console.log(txt); 
-*/
+
     //use "registeredFirstName" as your array of string
     let txt = "";
 
@@ -104,6 +104,20 @@ function showLog()
     }
 
     console.log(txt); 
+
+    */
+
+    //Print the firstname for 20 times 0-19
+    let txt = registeredFirstName[0];
+    let i = 0;
+
+    while(answerHere)
+    {
+        txt += registeredFirstName[0] + i;
+
+        answerHere;
+    }
+
 }
 
 
