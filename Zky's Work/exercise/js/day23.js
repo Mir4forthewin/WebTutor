@@ -107,19 +107,19 @@ function showLog()
 
     */
 
+
     //Print the firstname for 20 times 0-19
     let txt = registeredFirstName[0];
-    let i = 0;
+    let z = 0;
 
-    while(answerHere)
+    while(z < 20)
     {
-        txt += registeredFirstName[0] + i;
+        txt += registeredFirstName[0] + z;
 
-        answerHere;
+        z++;
     }
 
 }
-
 
 function showMessage(idName, message)
 {
