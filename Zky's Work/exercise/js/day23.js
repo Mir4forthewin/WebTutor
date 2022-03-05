@@ -98,9 +98,9 @@ function showLog()
     //use "registeredFirstName" as your array of string
     let txt = "";
 
-    for(let answerHere of AnswerHere)
+    for(let x of registeredFirstName)
     {
-        txt += answerHere;
+        txt += x;
     }
 
     console.log(txt); 
