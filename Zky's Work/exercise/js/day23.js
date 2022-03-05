@@ -80,7 +80,7 @@ function showLog()
     }
     
     let i, len, text, surnameDummy;
-
+/*
     for(i = 0, len = registeredPerson.length, text = ""; i < len; i++)
     {
         console.log(registeredPerson[i].lastName);   
@@ -91,6 +91,16 @@ function showLog()
     for(let x in person)
     {
         txt += person[x] + " ";
+    }
+
+    console.log(txt); 
+*/
+    //use "registeredFirstName" as your array of string
+    let txt = "";
+
+    for(let answerHere of AnswerHere)
+    {
+        txt += answerHere;
     }
 
     console.log(txt); 
