@@ -107,7 +107,7 @@ function showLog()
 
     */
 
-
+    /*
     //Print the firstname for 20 times 0-19
     let txt = registeredFirstName[0];
     let z = 0;
@@ -118,8 +118,44 @@ function showLog()
 
         z++;
     }
+console.log(txt); 
+    */
 
-    console.log(txt); 
+
+    //Break the loop when it encunters a Japanese made car
+    let txt = "";
+
+    const cars = ["bmw", "audi", "toyota","ford"];
+
+    for(let car of cars)
+    {
+        if(car === answerHere )
+        {
+            //what statement to use to break the loop
+        }
+
+        txt += car;
+    }
+
+    document.getElementById("result").innerHTML = txt;
+
+
+    txt = "";
+
+
+    //Skip the loop when it encunters a Japanese made car
+    for(let car of cars)
+    {
+        if(car === answerHere )
+        {
+            //what statement to use to continue the loop
+        }
+
+        txt += car;
+    }
+
+    document.getElementById("result2").innerHTML = txt;
+
 }
 
 function showMessage(idName, message)
