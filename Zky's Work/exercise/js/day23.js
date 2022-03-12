@@ -129,9 +129,9 @@ console.log(txt);
 
     for(let car of cars)
     {
-        if(car === answerHere )
+        if (car === 3) { break; }
         {
-            //what statement to use to break the loop
+            text += cars + "<br>";
         }
 
         txt += car;
@@ -146,9 +146,9 @@ console.log(txt);
     //Skip the loop when it encunters a Japanese made car
     for(let car of cars)
     {
-        if(car === answerHere )
+        if(car === 3 ){ continue; }
         {
-            //what statement to use to continue the loop
+            if (cars === 3) { continue; }
         }
 
         txt += car;
