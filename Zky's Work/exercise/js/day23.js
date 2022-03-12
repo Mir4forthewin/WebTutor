@@ -129,12 +129,12 @@ console.log(txt);
 
     for(let car of cars)
     {
-        if (car === 3) { break; }
-        {
-            text += cars + "<br>";
+        if (car === "toyota") 
+        { 
+            break; 
         }
-
-        txt += car;
+        
+        txt += car + "<br>";
     }
 
     document.getElementById("result").innerHTML = txt;
@@ -146,12 +146,12 @@ console.log(txt);
     //Skip the loop when it encunters a Japanese made car
     for(let car of cars)
     {
-        if(car === 3 ){ continue; }
+        if(car === "toyota" )
         {
-            if (cars === 3) { continue; }
+            continue; 
         }
 
-        txt += car;
+        txt += car + "<br>";;
     }
 
     document.getElementById("result2").innerHTML = txt;
