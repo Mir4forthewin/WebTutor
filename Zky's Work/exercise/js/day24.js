@@ -9,9 +9,12 @@ var person =
 }
 
 let tData = document.getElementById("tableData");
+
 let registeredFirstName = [];  //this is storage for the firstname
 let registeredLastName = [];   //this is storage for lastname
+
 let registeredPerson = [];
+let registeredPersonNew = new Set();
 
 var number = 3;
 
@@ -20,6 +23,7 @@ function submitData()
     let fullName =  person.lastName + ", " +  person.firstName;
     let dateToday = new Date();
 
+    person.visitorID += 1; 
     person.firstName = document.getElementById("firstName").value;
     person.lastName = document.getElementById("lastName").value;
     person.address = document.getElementById("address").value;
@@ -68,6 +72,7 @@ function submitData()
         pushData(person.firstName);
         pushDataLastname(person.lastName);
         pushDataAll(person);
+        pushDataAllNew(person)
     } 
 
     showLog();
@@ -75,13 +80,20 @@ function submitData()
 
 function showLog()
 {
+    /*
     for(let index = 0; index < registeredPerson.length; index++)
     { 
         console.log(registeredPerson[index]);
     }
+    */
     
+    for (const person of registeredPersonNew.values()) {
+        console.log(person);
+    }
+
+    /*
     let i, len, text, surnameDummy;
-/*
+
     for(i = 0, len = registeredPerson.length, text = ""; i < len; i++)
     {
         console.log(registeredPerson[i].lastName);   
@@ -120,7 +132,7 @@ function showLog()
         z++;
     }
 console.log(txt); 
-    */
+    
 
 
     //Break the loop when it encunters a Japanese made car
@@ -156,7 +168,7 @@ console.log(txt);
     }
 
     document.getElementById("result2").innerHTML = txt;
-
+    */
 }
 
 function showMessage(idName, message)
@@ -250,6 +262,7 @@ function pushDataAll(personData)
 {
     let tempPerson = 
     {
+        visitorID: personData.visitorID,
         firstName: personData.firstName, 
         lastName: personData.lastName, 
         address: personData.address, 
@@ -258,6 +271,21 @@ function pushDataAll(personData)
     }
 
     registeredPerson.push(tempPerson);
+}
+
+function pushDataAllNew(personData)
+{
+    let tempPerson = 
+    {
+        visitorID: personData.visitorID,
+        firstName: personData.firstName, 
+        lastName: personData.lastName, 
+        address: personData.address, 
+        cellphoneNumber: personData.cellphoneNumber,
+        dateOfBirth: personData.dateOfBirth
+    }
+
+    registeredPersonNew.add(tempPerson);
 }
 
 function retrieveLastNameData()
