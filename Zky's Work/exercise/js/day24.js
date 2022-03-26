@@ -9,11 +9,8 @@ var person =
 }
 
 let tData = document.getElementById("tableData");
-
-let registeredFirstName = [];  //this is storage for the firstname
+let registeredFirstNameNew = new Set(); //this is storage for the firstname
 let registeredLastName = [];   //this is storage for lastname
-
-let registeredPerson = [];
 let registeredPersonNew = new Set();
 
 var number = 3;
@@ -71,7 +68,6 @@ function submitData()
         changetoUpperCase();
         pushData(person.firstName);
         pushDataLastname(person.lastName);
-        pushDataAll(person);
         pushDataAllNew(person)
     } 
 
@@ -210,12 +206,6 @@ function clearData()
     document.getElementById("contactNumber").value = "";
 }
 
-//saving data furst
-
-//Start
-
-//retrieving data first
-
 function retrieveFirstNameData()
 {   
     clearTable();
@@ -223,11 +213,11 @@ function retrieveFirstNameData()
     let tRow = document.createElement('tr');
     let tHead = document.createElement('th');
  
-    tHead.innerHTML = "First Name";  //<th>First Name</th>
-    tRow.appendChild(tHead);  //<tr> <th>First Name</th> </tr>
-    tData.appendChild(tRow);  //<table> <tr> <th>First Name</th> </tr> </table> 
+    tHead.innerHTML = "First Name";  
+    tRow.appendChild(tHead);  
+    tData.appendChild(tRow);  
     
-   registeredFirstName.forEach(insertRowFirstName);
+   registeredFirstNameNew.forEach(insertRowFirstName);
 }
 
 
@@ -250,27 +240,13 @@ function insertRowFirstName(value, index, array)
 
 function pushData(firstName)
 {
-    registeredFirstName.push(firstName);
+    //registeredFirstName.push(firstName);
+    registeredFirstNameNew.add(firstName);
 }
 
 function pushDataLastname(lastName)
 {
     registeredLastName.push(lastName)
-}
-
-function pushDataAll(personData)
-{
-    let tempPerson = 
-    {
-        visitorID: personData.visitorID,
-        firstName: personData.firstName, 
-        lastName: personData.lastName, 
-        address: personData.address, 
-        cellphoneNumber: personData.cellphoneNumber,
-        dateOfBirth: personData.dateOfBirth
-    }
-
-    registeredPerson.push(tempPerson);
 }
 
 function pushDataAllNew(personData)
