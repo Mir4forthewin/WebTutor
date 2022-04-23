@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1831
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galford_Odd_Even_Number", "Galford_Odd_Even_Number\Galford_Odd_Even_Number.csproj", "{A5996087-B6BE-4BC0-BC72-56060FE7B325}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5996087-B6BE-4BC0-BC72-56060FE7B325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5996087-B6BE-4BC0-BC72-56060FE7B325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5996087-B6BE-4BC0-BC72-56060FE7B325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5996087-B6BE-4BC0-BC72-56060FE7B325}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96128DA9-1656-4F9A-8733-91AE9E9DE410}
+	EndGlobalSection
+EndGlobal
